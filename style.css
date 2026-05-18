@@ -5,7 +5,7 @@ main {
 aside {
   width: 20rem;
   margin: 1rem;
-  border: 1px solid rgb(0 0 0 / 0.2); 
+  border: 1px solid rgb(0, 0, 0, 0.2); 
   padding: 1rem;
   background-color: #eee;
   color: #333;
@@ -15,6 +15,9 @@ aside {
 aside img {
   width: 200px;
   height: auto;
+  border: 1px solid slategray;
+  padding: 2px;
+  box-shadow: 0 0 30px gray;
 }
 
 main img {
