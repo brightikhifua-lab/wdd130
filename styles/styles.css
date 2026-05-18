@@ -1,5 +1,33 @@
+
 main {
   max-width: 840px;
+}
+
+h1 {
+  color: #333;
+}
+
+p {
+  padding: 0;
+}
+
+nav {
+  background-color: #333;
+  padding: 0.5rem;
+}
+
+nav a {
+  color: #fff;
+  padding: 0.5rem 1rem;
+  display: block;
+}
+
+main img {
+  width: 150px;
+  height: auto;
+  border: 1px solid #ccc;   
+  padding: 5px;               
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
 }
 
 aside {
@@ -15,18 +43,6 @@ aside {
 aside img {
   width: 200px;
   height: auto;
-}
-
-main img {
-  width: 150px;
-  height: auto;
-   border: 1px solid slategray;
-  padding: 2px;
-  box-shadow: 0 0 30px gray;
-}
-
-p {
-  padding: 0;
 }
 
 footer {
