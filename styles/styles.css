@@ -1,3 +1,16 @@
+:root {
+  --primary-color: #333;
+  --light-bg: #eee;
+  --white: #fff;
+  --border-color: #000;
+  --light-border: #ccc;
+  --link-color: #0044cc;
+  
+  --max-width: 840px;
+  --standard-padding: 1rem;
+  --half-padding: 0.5rem;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,9 +18,13 @@
 }
 
 main {
-  max-width: 840px;
+  max-width: var(--max-width);
   margin: 0 auto;
   display: flow-root;
+}
+
+h1 {
+  color: var(--primary-color);
 }
 
 p {
@@ -15,15 +32,15 @@ p {
 }
 
 nav {
-  background-color: #333;
-  padding: 0.5rem;
+  background-color: var(--primary-color);
+  padding: var(--half-padding);
   display: flex;
   gap: 1rem;
 }
 
 nav a {
-  color: #fff;
-  padding: 0.5rem 1rem;
+  color: var(--white);
+  padding: var(--half-padding) var(--standard-padding);
   display: block;
   text-decoration: none;
 }
@@ -31,6 +48,9 @@ nav a {
 main img {
   width: 150px;
   height: auto;
+  border: 0.5px solid var(--light-border);   
+  padding: 5px;               
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
   float: right;
   margin-left: 15px;
   margin-bottom: 15px;
@@ -49,7 +69,7 @@ aside img {
 
 aside h2 {
   position: absolute;
-  top: 25px;
+  top: 25px; 
   left: 50%;
   transform: translateX(-50%);
   background-color: rgba(255, 255, 255, 0.85);
@@ -59,7 +79,7 @@ aside h2 {
 
 footer {
   margin-top: 15px;
-  border-top: 1px solid #000;
+  border-top: 1px solid var(--border-color);
   text-align: center;
   clear: both;
 }
@@ -67,11 +87,11 @@ footer {
 /* Class Selectors */
 
 .box {
-  margin: 1rem;
+  margin: var(--standard-padding);
   border: 1px solid rgb(0 0 0 / 10%);
-  padding: 1rem;
-  background-color: #eee;
-  color: #333;
+  padding: var(--standard-padding);
+  background-color: var(--light-bg);
+  color: var(--primary-color);
 }
 
 ul.box {
@@ -85,7 +105,7 @@ ul.box li {
 }
 
 ul.box a {
-  color: #0044cc;
+  color: var(--link-color);
   text-decoration: none;
 }
 
