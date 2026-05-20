@@ -80,6 +80,8 @@ footer {
   clear: both;
 }
 
+/* Class Selectors */
+
 .box {
   margin: var(--standard-padding);
   border: 1px solid rgb(0 0 0 / 10%);
