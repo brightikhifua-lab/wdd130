@@ -20,6 +20,7 @@
 main {
   max-width: var(--max-width);
   margin: 0 auto;
+  display: flow-root;
 }
 
 h1 {
@@ -33,12 +34,15 @@ p {
 nav {
   background-color: var(--primary-color);
   padding: var(--half-padding);
+  display: flex;
+  gap: 1rem;
 }
 
 nav a {
   color: var(--white);
   padding: var(--half-padding) var(--standard-padding);
   display: block;
+  text-decoration: none;
 }
 
 main img {
