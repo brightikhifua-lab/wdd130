@@ -1,19 +1,25 @@
 :root {
-  /* Color Variables */
   --primary-color: #333;
   --light-bg: #eee;
   --white: #fff;
   --border-color: #000;
   --light-border: #ccc;
+  --link-color: #0044cc;
   
-  /* Layout Variables */
   --max-width: 840px;
   --standard-padding: 1rem;
   --half-padding: 0.5rem;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 main {
   max-width: var(--max-width);
+  margin: 0 auto;
 }
 
 h1 {
@@ -41,16 +47,15 @@ main img {
   border: 0.5px solid var(--light-border);   
   padding: 5px;               
   box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  float: right;
+  margin-left: 15px;
+  margin-bottom: 15px;
 }
 
 aside {
   width: 20rem;
-  margin: var(--standard-padding);
-  border: 1px solid rgb(0, 0, 0, 0.2); 
-  padding: var(--standard-padding);
-  background-color: var(--light-bg);
-  color: var(--primary-color);
   text-align: center;
+  position: relative;
 }
 
 aside img {
@@ -58,8 +63,46 @@ aside img {
   height: auto;
 }
 
+aside h2 {
+  position: absolute;
+  top: 25px; 
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 4px 12px;
+  border-radius: 4px;
+}
+
 footer {
   margin-top: 15px;
   border-top: 1px solid var(--border-color);
   text-align: center;
+  clear: both;
+}
+
+.box {
+  margin: var(--standard-padding);
+  border: 1px solid rgb(0 0 0 / 10%);
+  padding: var(--standard-padding);
+  background-color: var(--light-bg);
+  color: var(--primary-color);
+}
+
+ul.box {
+  list-style-type: square;
+  padding-left: 2.5rem;
+  text-align: left;
+}
+
+ul.box li {
+  margin: 0.4rem 0;
+}
+
+ul.box a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+ul.box a:hover {
+  text-decoration: underline;
 }
