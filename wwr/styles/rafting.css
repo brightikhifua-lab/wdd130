@@ -5,7 +5,6 @@
   --accent2-color: #e9c46a;
   --heading-font: "Times New Roman", "Georgia", serif;
   --body-font: Arial, Helvetica, sans-serif;
-  --marquee-font: "Arial Black", Gadget, sans-serif;
 }
 
 * {
@@ -138,26 +137,4 @@ footer {
   margin-left: 18px;
   border-radius: 4px;
   border: 3px solid var(--secondary-color);
-}
-
-.adventure-banner {
-  background-color: var(--accent1-color);
-  padding: 20px;
-  text-align: center;
-  border-radius: 6px;
-  margin: 30px 16px;
-  overflow: hidden;
-  box-shadow: inset 0 0 15px rgba(0,0,0,0.4);
-}
-
-.adventure-banner h2 {
-  font-family: var(--marquee-font);
-  color: var(--accent2-color);
-  font-size: 2.6rem;
-  text-transform: uppercase;
-  display: inline-block;
-  margin: 0;
-  font-weight: 900;
-  letter-spacing: 4px;
-  text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.3);
 }
