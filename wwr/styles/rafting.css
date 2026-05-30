@@ -6,6 +6,9 @@
   --heading-font: "Times New Roman", "Georgia", serif;
   --body-font: Arial, Helvetica, sans-serif;
   --light-border: #ccc;
+  --body-bg: #fafafa;
+  --white: #ffffff;
+  --dark-text: #333333;
 }
 
 * {
