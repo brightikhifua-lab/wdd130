@@ -187,11 +187,6 @@ footer {
   font-weight: bold;
 }
 
-/* =======================================================
-   CONTACT US PAGE SPECIFIC RULES (WIREFRAME COMPLIANT)
-   ======================================================= */
-
-/* Company Header Info Block Layout */
 .company-heading {
   text-align: center;
   margin: 1.5rem 0;
@@ -204,7 +199,6 @@ footer {
   font-style: normal;
 }
 
-/* Side-by-Side Flex Layout (Map & Form Wrapper Container) */
 .contact-grid {
   display: flex;
   gap: 24px;
@@ -217,15 +211,13 @@ footer {
   min-width: 300px;
 }
 
-/* Google Map Frame Sizing */
 .map-box iframe {
   width: 100%;
   height: 100%;
-  min-height: 400px;
+  min-height: 440px;
   border: 1px solid var(--light-border);
 }
 
-/* Gray Form Styling Rules */
 .form-box form {
   background-color: #eee;
   padding: 24px;
@@ -251,7 +243,6 @@ footer {
   font-size: 1rem;
 }
 
-/* Form Message Selection Options */
 .purpose-selection {
   border: none;
   margin: 1rem 0;
@@ -263,7 +254,6 @@ footer {
   margin-bottom: 0.5rem;
 }
 
-/* Shared Alignment Properties for Inline Text Controls */
 .radio-item,
 .checkbox-control {
   display: flex;
@@ -283,7 +273,6 @@ footer {
   margin: 1.25rem 0;
 }
 
-/* Wireframe Native Submission Button Variant */
 .form-box button[type="submit"] {
   display: block;
   width: 100%;
@@ -302,7 +291,6 @@ footer {
   color: var(--accent1-color);
 }
 
-/* Management Team Section Gray Banner Component */
 .management-section {
   background-color: #eee;
   padding: 24px;
@@ -315,7 +303,6 @@ footer {
   margin-bottom: 1.5rem;
 }
 
-/* 3-Column Profile Card Alignment Grid */
 .management-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
