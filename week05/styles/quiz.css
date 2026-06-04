@@ -49,4 +49,6 @@ code {
 
 }
 
-.quiz-item {}
+.quiz-item {
+    border: none;
+}
