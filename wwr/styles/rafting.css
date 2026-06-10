@@ -20,7 +20,9 @@ body {
   background-color: #fafafa;
 }
 
-header, main, footer {
+header,
+main,
+footer {
   width: 840px;
   margin: 0 auto;
 }
@@ -61,7 +63,8 @@ nav a:hover {
   color: var(--secondary-color);
 }
 
-h1, h2 {
+h1,
+h2 {
   font-family: var(--heading-font);
   color: var(--primary-color);
 }
@@ -70,7 +73,10 @@ p {
   line-height: 1.6;
 }
 
-nav, p, section, article {
+nav,
+p,
+section,
+article {
   margin: 16px;
   padding: 8px;
 }
@@ -179,4 +185,147 @@ footer {
   font-size: 0.9rem;
   color: var(--accent1-color);
   font-weight: bold;
+}
+
+.company-heading {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.company-address {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-top: 0.5rem;
+  font-style: normal;
+}
+
+.contact-grid {
+  display: flex;
+  gap: 24px;
+  margin: 1.5rem 16px;
+}
+
+.map-box,
+.form-box {
+  flex: 1;
+  min-width: 300px;
+}
+
+.map-box iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 440px;
+  border: 1px solid var(--light-border);
+}
+
+.form-box form {
+  background-color: #eee;
+  padding: 24px;
+  border: 1px solid var(--light-border);
+}
+
+.input-control {
+  margin-bottom: 1rem;
+}
+
+.input-control label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.input-control input,
+.input-control textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--light-border);
+  font-family: var(--body-font);
+  font-size: 1rem;
+}
+
+.purpose-selection {
+  border: none;
+  margin: 1rem 0;
+  padding: 0;
+}
+
+.purpose-selection legend {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.radio-item,
+.checkbox-control {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.radio-item label,
+.checkbox-control label {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+.checkbox-control {
+  margin: 1.25rem 0;
+}
+
+.form-box button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #ddd;
+  color: #111;
+  border: 1px solid #999;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.form-box button[type="submit"]:hover {
+  background-color: var(--accent2-color);
+  color: var(--accent1-color);
+}
+
+.management-section {
+  background-color: #eee;
+  padding: 24px;
+  border: 1px solid var(--light-border);
+  margin: 2rem 16px;
+}
+
+.management-section h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.management-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.management-grid figure {
+  background: #ffffff;
+  border: 1px solid var(--light-border);
+  text-align: center;
+  padding: 12px;
+  margin: 0;
+}
+
+.management-grid img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+}
+
+.management-grid figcaption {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  line-height: 1.4;
 }
