@@ -64,7 +64,8 @@ nav a:hover {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-family: var(--heading-font);
   color: var(--primary-color);
 }
@@ -328,4 +329,257 @@ footer {
   margin-top: 10px;
   font-size: 0.95rem;
   line-height: 1.4;
+}
+
+.home-intro {
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.home-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin: 1.5rem 16px;
+}
+
+.grid-card {
+  background-color: #ffffff;
+  border: 1px solid var(--light-border);
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  margin: 0;
+  padding: 0;
+}
+
+.grid-card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.grid-card h3 {
+  padding: 15px 15px 5px 15px;
+  margin: 0;
+}
+
+.grid-card p {
+  padding: 0 15px 15px 15px;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.newsletter-box {
+  background-color: var(--accent1-color);
+  color: #ffffff;
+  border-radius: 6px;
+  padding: 24px;
+  margin: 2.5rem 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: center;
+}
+
+.newsletter-content {
+  margin: 0;
+  padding: 0;
+}
+
+.newsletter-content h2 {
+  color: var(--accent2-color);
+  margin-bottom: 8px;
+}
+
+.newsletter-content p {
+  color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+}
+
+.newsletter-form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.newsletter-form label {
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: #ffffff;
+}
+
+.newsletter-form input {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.newsletter-form button {
+  padding: 12px;
+  background-color: var(--secondary-color);
+  color: var(--accent1-color);
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.newsletter-form button:hover {
+  background-color: var(--accent2-color);
+}
+
+.hero-cta {
+  display: inline-block;
+  background-color: var(--secondary-color);
+  color: var(--accent1-color);
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  margin-top: 10px;
+  transition: background-color 0.2s;
+}
+
+.hero-cta:hover {
+  background-color: var(--accent2-color);
+}
+
+.trips-hero {
+  background-color: var(--accent1-color);
+  color: #ffffff;
+  padding: 40px;
+  text-align: center;
+  margin: 1.5rem 16px;
+  border-radius: 6px;
+}
+
+.trips-cta-banner h1 {
+  color: var(--accent2-color);
+  font-size: 2.2rem;
+  margin-bottom: 12px;
+}
+
+.trips-cta-banner p {
+  margin-bottom: 15px;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: var(--secondary-color);
+  color: var(--accent1-color);
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.cta-button:hover {
+  background-color: var(--accent2-color);
+}
+
+.trips-container {
+  margin: 2rem 16px;
+}
+
+.trips-container h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.trips-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 28px;
+  margin: 0;
+  padding: 0;
+}
+
+.trip-card {
+  background-color: #ffffff;
+  border: 1px solid var(--light-border);
+  border-radius: 6px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  margin: 0;
+  padding: 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.trip-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.trip-info {
+  padding: 20px;
+  margin: 0;
+}
+
+.trip-info h3 {
+  margin-bottom: 8px;
+}
+
+.trip-info p {
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+
+.table-section {
+  margin: 3rem 16px 1rem 16px;
+}
+
+.table-section h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border: 1px solid var(--light-border);
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--light-border);
+}
+
+th {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  font-family: var(--body-font);
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
 }
